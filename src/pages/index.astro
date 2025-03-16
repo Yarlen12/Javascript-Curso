@@ -1,6 +1,7 @@
 ---
 import Welcome from "../components/Welcome.astro";
 import Layout from "../layouts/Layout.astro";
+import Ejemplo2 from "./Ejemplo-2.astro";
 ---
 
 <Layout>
@@ -10,17 +11,17 @@ import Layout from "../layouts/Layout.astro";
         Soy el header de esta app
       </h1>
       <menu>
-        <ul class="text-center">
-          <li class="">
+        <ul id="parent" class="text-center">
+          <li id="children" class="">
             <a href="#">Home</a>
           </li>
-          <li class="menu-items">
+          <li id="children" class="menu-items">
             <a href="#">About me</a>
           </li>
-          <li class="menu-items">
+          <li id="children" class="menu-items">
             <a href="#">Blogs</a>
           </li>
-          <li class="menu-items">
+          <li id="children" class="menu-items">
             <a href="#">Contact</a>
           </li>
         </ul>
@@ -34,6 +35,8 @@ import Layout from "../layouts/Layout.astro";
         <p>Soy el texto secundario de esta app</p>
       </section>
     </main>
-    <script src="../assets/js/app.js"></script>
   </body>
 </Layout>
+<Ejemplo2 />
+
+<script src="../assets/js/app.js"></script>
